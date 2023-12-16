@@ -1,13 +1,13 @@
 ﻿@model DoAn.Models.Mathang
 
 @{
-    ViewData["Title"] = "Chi tiết sản phẩm";
+    ViewData["Title"] = "Chi tiết sản phẩm";
 }
 
-<h1>Details</h1>
+<h1>Chi tiết sản phẩm</h1>
 
 <div>
-    <h4>Mathang</h4>
+    <h4>Sản phẩm</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -41,10 +41,10 @@
             @Html.DisplayFor(model => model.MoTa)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HinhAnh)
+            <img src="~/images/@Html.DisplayFor(model => model.HinhAnh)" class="img-thumbnail" width="400" />
         </dt>
         <dd class = "col-sm-10">
-            <img src="~/images/@Html.DisplayFor(model => model.HinhAnh)" class="img-thumbnail" width="400" />
+            @Html.DisplayFor(model => model.HinhAnh)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.LuotXem)
@@ -67,5 +67,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index">Quay lại danh sách sản phẩm</a>
+    <a asp-action="Edit" asp-route-id="@Model.MaMh">Cập nhật</a> |
+    <a asp-action="Index">Quay về</a>
 </div>

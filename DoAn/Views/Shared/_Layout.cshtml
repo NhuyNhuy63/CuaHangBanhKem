@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DoAn</title>
+    <title>@ViewData["Title"] - Komatsu</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
+    <header >
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DoAn</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Komatsu</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,10 +45,46 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - DoAn - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="border-top footer text-muted" style="background-color: #174e85">
+      <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="list-inline">
+                  <li>
+                      <p style="color:white; font-weight:bold">Địa chỉ: Ung Văn Khiêm, Đông Xuyên, Thành phố Long Xuyên, tỉnh An Giang</p>
+                        
+                  </li>
+                  <li>
+                      <p style="color:white; font-weight:bold">Email: komatsu@gmail.com</p>
+                  </li>
+                  <li>
+                      <p style="color:white; font-weight:bold">Số điện thoại: 0856412369</p>  
+                  </li>
+                  <li>
+                      <p style="color:white; font-weight:bold">Fanpage: https://www.facebook.com/komatsu231216</p>  
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="list-inline">
+                  <li class="nav navbar-nav">
+                      <a class="nav-link" data-toggle="dropdown" style="color:white; font-weight:bold">Danh mục</a>
+                      <a class="dropdown-item" href="/Mathangs/Index" style="color:white">Bánh quy</a>
+                      <a class="dropdown-item"href="/Mathangs/Index" style="color:white">Bánh Tiramisu</a>
+                      <a class="dropdown-item" href="/Mathangs/Index" style="color:white">Bánh Mousses</a>
+                      <a class="dropdown-item" href="/Mathangs/Index" style="color:white">Bánh sinh nhật</a>
+                  </li>
+               
+                </ul>
+              </div>
+  
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright">Copyright &copy; 2023 Cửa hàng bánh kem Komatsu</p>
+              </div>
+            </div>
+      </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

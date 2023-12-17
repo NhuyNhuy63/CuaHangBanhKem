@@ -1,5 +1,8 @@
 ﻿using DoAn.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -17,14 +20,16 @@ namespace DoAn.Controllers
         {
             _logger = logger;
         }
-
+   
         public IActionResult Index()
         {
+   
             return View();
         }
 
         public IActionResult Privacy()
         {
+  
             return View();
         }
 
@@ -33,5 +38,9 @@ namespace DoAn.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        // Trang Contact.aspx.cs
+
     }
+       
 }

@@ -22,18 +22,27 @@ namespace DoAn.Models
         public int MaMh { get; set; }
         [Required]
         [StringLength(100)]
+        [Display(Name = "Mã mặt hàng")]
         public string Ten { get; set; }
+        [Display(Name = "Tên mặt hàng")]
         public int? GiaGoc { get; set; }
+        [Display(Name = "Giá gốc")]
         public int? GiaBan { get; set; }
+        [Display(Name = "Giá bán")]
         public short? SoLuong { get; set; }
         [StringLength(1000)]
+        [Display(Name = "Số lượng")]
         public string MoTa { get; set; }
         [StringLength(255)]
+        [Display(Name = "Mô tả")]
         public string HinhAnh { get; set; }
         [Column("MaDM")]
         public int MaDm { get; set; }
+        [Display(Name = "Mã danh mục")]
         public int? LuotXem { get; set; }
+        [Display(Name = "Lượt xem")]
         public int? LuotMua { get; set; }
+        [Display(Name = "Lượt mua")]
 
         [ForeignKey(nameof(MaDm))]
         [InverseProperty(nameof(Danhmuc.Mathang))]

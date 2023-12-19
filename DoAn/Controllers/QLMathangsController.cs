@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DoAn.Data;
 using DoAn.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DoAn.Controllers
 {
+    [Authorize]
     public class QLMathangsController : Controller
     {
         private readonly ApplicationDbContext _context;

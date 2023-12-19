@@ -14,13 +14,18 @@ namespace DoAn.Models
     {
         [Key]
         [Column("MaNV")]
+        [Display(Name ="Mã nhân viên")]
         public int MaNv { get; set; }
         [Required]
         [StringLength(100)]
+        [Display(Name = "Tên nhân viên")]
         public string Ten { get; set; }
         [Column("MaCV")]
+
+        [Display(Name = "Mã chức vụ")]
         public int MaCv { get; set; }
         [StringLength(20)]
+        [Display(Name = "Số điện thoại")]
         public string DienThoai { get; set; }
         [StringLength(50)]
         public string Email { get; set; }

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DoAn.Controllers
 {
-    [Authorize]
+    
     public class QLMathangsController : Controller
     {
         private readonly ApplicationDbContext _context;

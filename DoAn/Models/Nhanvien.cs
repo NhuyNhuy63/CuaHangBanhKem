@@ -30,10 +30,12 @@ namespace DoAn.Models
         [StringLength(50)]
         public string Email { get; set; }
         [StringLength(50)]
+        [Display(Name = "Mật khẩu")]
         public string MatKhau { get; set; }
 
         [ForeignKey(nameof(MaCv))]
         [InverseProperty(nameof(Chucvu.Nhanvien))]
+        [Display(Name = "Chức vụ")]
         public virtual Chucvu MaCvNavigation { get; set; }
     }
 }

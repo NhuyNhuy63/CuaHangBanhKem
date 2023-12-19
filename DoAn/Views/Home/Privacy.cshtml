@@ -4,19 +4,18 @@
 <h1>@ViewData["Title"]</h1>
 
 <body>
-    <form id="form1" runat="server">
-        <div style=" background-color: #f3f3f3;border: 2px solid black;border-radius: 5px;padding: 10px;">
+    <form id="form1" runat="server" style="width:400px; height:500px; ">
+        <div style=" background-color: #f3f3f3;border: 2px solid black;border-radius: 5px;padding:10px;">
    
-            <label for="PhoneNumberTextBox">Số điện thoại:</label>
-            <asp:TextBox ID="PhoneNumberTextBox" runat="server">ã</asp:TextBox><br /><br />
+            <label for="PhoneNumberTextBox" style="font-weight:bold">Số điện thoại:</label>
+            <input name="TextBox1" id="TextBox1" type="text">  <br /><br />
 
-            <label for="FullNameTextBox">Họ Tên:</label>
-            <asp:TextBox ID="FullNameTextBox" runat="server"></asp:TextBox><br /><br />
+            <label for="FullNameTextBox" style="font-weight:bold">Họ Tên:</label>
+            <input name="TextBox1" id="TextBox1" type="text">  <br /><br />
 
-            <label for="MessageTextBox">Tin nhắn:</label>
-            <asp:TextBox ID="MessageTextBox" runat="server" TextMode="MultiLine"></asp:TextBox><br /><br />
-
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" /><br /><br />
+            <label for="MessageTextBox" style="font-weight:bold">Tin nhắn:</label>
+            <input name="TextBox1" id="TextBox1" type="text">  <br /><br />
+            
         </div>
     </form>
 </body>

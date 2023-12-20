@@ -25,7 +25,11 @@ namespace DoAn.Controllers
             var applicationDbContext = _context.Mathang.Include(m => m.MaDmNavigation);
             return View(await applicationDbContext.ToListAsync());
         }
-
+        public async Task<IActionResult> Index1()
+        {
+            var applicationDbContext = _context.Mathang.Include(m => m.MaDmNavigation);
+            return View(await applicationDbContext.ToListAsync());
+        }
         // GET: Mathangs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
